@@ -1,14 +1,24 @@
 
 import './Button.css'
 const Button = (props) => {
-  const {btfun , btName} = props;
+  const { bttName} = props;
   return (
    
-         <div>
-      <button className="btn-cal  px-6 py-2  rounded-lg" onClick={btfun}>
-        {btName}{" "}
+         <div className='container'>
+          <div className='calsi'>
+<form>
+  <div className='display'>
+{/* <input type='text' value={bttName}/> */}
+  </div>
+  <div>
+  <button className="btn-cal  " >
+        {bttName}
       </button>
-    </div>
+  </div>
+</form>
+          </div>
+
+ </div>
    
   )
 }
